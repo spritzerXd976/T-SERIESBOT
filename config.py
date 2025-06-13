@@ -66,7 +66,7 @@ GIT_TOKEN = getenv(
 
 # ------------------------------------------------------------------------
 # -------------------------------------------------------------------------
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/TSERIES_SUPPORT")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/botsyard")
 SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+ZVt4d6AnWpsyYjBl")
 # ------------------------------------------------------------------------------
 # ------------------------------------------------------------------------------
@@ -106,7 +106,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "5242880000"))
 # ------------------------------------
 # ------------------------------------
 # ------------------------------------
-STRING1 = getenv("STRING_SESSION", "BQFHClIAebeNsUUif9mX-pORBLUFEmNVWfJIL7yafUgRRsBJKMxf4ox7bnVGEHdRzwQtXRMHPgfqmfH8T_1c6qyeFP9TCZLxUKCaxTS1vDNdkxzgcqaJ3sclf6GWmb1KzfgofNzolvKubgMmXuKxul8AsoZd5IxYvH4Bc--M9yxmzKkArKzVJkaeYGXmNf4sXY4z-dlioWXf21IaBTOfae5Znd6AiNx2GWHMTOb6iJrrsuacQfufuA2YVNBo9xjvFaCeyotP7TKQEDicmIRP8DFCpwu6cwIqYsumt_Qlu_0M6tEedZMNq0A4pzawphjlUqNvUlDulG1co2P4B5KHTzEkIvTUyAAAAAGo0M_tAA")
+STRING1 = getenv("STRING_SESSION", "BQFwyZ4AYEZo7Xx4GxCjmlc96RLggtMDJvBrHeCSn_ocyajZ5YGze7TSRskBp_6llVR441U2oqlO0EzqGxCXCGuBAQFKHZaOmRS8p8_q6jswvlZ_Ub80Q98W6V-q3oFmWxIrAGCOLA0hQZziiPH4TKDRq8I_WxdKHZ7iUPuxdXqzvedEiu5OEl11A1OH6GpRvDxcZ72uSHF6JDXqCtoYGmIX474ze3X4e9nkmEluGbsE8rPN6YtyxXinZZAOwOEb0EDZV8QaRuH7OPtOO7QT30M8OAkZndwx_fdjCTaJ-gw6wkjOYg3rU3AAh7Mw40eTpI8m0u56k7Vrj_j-fb2Uxhyf1ogeygAAAAGz7KGCAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
