@@ -9,8 +9,8 @@ from pyrogram import filters
 load_dotenv()
 # ------------------------------------
 # -----------------------------------------------------
-API_ID = int(getenv("API_ID", "22888371"))
-API_HASH = getenv("API_HASH", "5db016d90307cd3725b07c7b87755769")
+API_ID = int(getenv("API_ID", "28359400"))
+API_HASH = getenv("API_HASH", "656ce69d71f746a27cfb64d242a90453")
 # ------------------------------------------------------
 BOT_TOKEN = getenv("BOT_TOKEN", "7695186077:AAEM_IHWdqBqg4mBLQntid6ycdm2sS1cNbw")
 # -------------------------------------------------------
@@ -106,7 +106,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "5242880000"))
 # ------------------------------------
 # ------------------------------------
 # ------------------------------------
-STRING1 = getenv("STRING_SESSION", "BQFwyZ4AYEZo7Xx4GxCjmlc96RLggtMDJvBrHeCSn_ocyajZ5YGze7TSRskBp_6llVR441U2oqlO0EzqGxCXCGuBAQFKHZaOmRS8p8_q6jswvlZ_Ub80Q98W6V-q3oFmWxIrAGCOLA0hQZziiPH4TKDRq8I_WxdKHZ7iUPuxdXqzvedEiu5OEl11A1OH6GpRvDxcZ72uSHF6JDXqCtoYGmIX474ze3X4e9nkmEluGbsE8rPN6YtyxXinZZAOwOEb0EDZV8QaRuH7OPtOO7QT30M8OAkZndwx_fdjCTaJ-gw6wkjOYg3rU3AAh7Mw40eTpI8m0u56k7Vrj_j-fb2Uxhyf1ogeygAAAAGz7KGCAA")
+STRING1 = getenv("STRING_SESSION", "BQGwuugAScHebjLA0ImLMEBoOWrTCLFc7HhfxSzrOMBVYyriRwuJfXjJq9ghtAaVZPj9Rd8eE9ZhXlq53XrgRM4Nnc1tzCOd-hZd3_U3q8zPAwkKUMF86RX5yNjtCmF3dYsx2E7o1l2p2vECyln4UsMBC10w3CMc3wvOKOKJvUJ7ph41YHtTKxYNW_WHV2d5wB3RcfPsjm5t1s5SOsU5DuPJd2ZuHS7GWQ78bOyOo43WB1vTdZ0L7osnFG0ORx9mfbAPu9b4ruBnJNyzkWeS2MMaf91oMrEiLANvKhvS13nuRnpAMxizF4vVKaMR-ebM24vFRHu6YCk3RPZLj8z7JS0jpcJ78gAAAAGz7KGCAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
