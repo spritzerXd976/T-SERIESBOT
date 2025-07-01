@@ -23,8 +23,8 @@ BOT_NAME = getenv("BOT_NAME")
 ASSUSERNAME = getenv("ASSUSERNAME")
 # ---------------------------------------------------------
 # Vars For API End Pont.
-API_BASE_URL = getenv("API_URL", "http://deadlinetech.site")
-API_KEY = getenv("API_KEY", None)
+API_URL = getenv("API_URL", 'https://api.thequickearn.xyz') #youtube song url
+API_KEY = getenv("API_KEY", "NxGBNexGenBots158e35") # youtube song api key, get it from https://t.me/RahulTC
 
 #---------------------------------------------------------------
 #---------------------------------------------------------------
