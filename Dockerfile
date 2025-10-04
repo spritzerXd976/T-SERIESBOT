@@ -1,12 +1,29 @@
-FROM nikolaik/python-nodejs:python3.9-nodejs18
+FROM python:3.10-slim
 
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends ffmpeg \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    ffmpeg \
+    curl \
+    git \
+    python3-dev \
+    libffi-dev \
+    libssl-dev \
+    && apt-get clean
 
-COPY . /app/
-WORKDIR /app/
-RUN pip3 install --no-cache-dir -U -r requirements.txt
+# Install Node.js 18 (for PyTgCalls)
+RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
+    && apt-get install -y nodejs
 
-CMD bash start
+WORKDIR /app
+
+# Copy requirements
+COPY requirements.txt requirements.txt
+
+# Install Python dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy bot files
+COPY . .
+
+CMD ["python3", "-m", "PURVIMUSIC"]
