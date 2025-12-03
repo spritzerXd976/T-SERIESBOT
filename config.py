@@ -25,7 +25,7 @@ ASSUSERNAME = getenv("ASSUSERNAME")
 
 # Vars For API End Pont.
 YTPROXY_URL = getenv("YTPROXY_URL", 'https://tgapi.xbitcode.com') ## E.G https://yt.okflix.
-YT_API_KEY = getenv("YT_API_KEY", "xbit_3pL7OGADcZtgYEyxcbE6KAhQ9v0rCp8P")
+YT_API_KEY = getenv("YT_API_KEY", "xbit_vG0FoJXEhlEsdtQ0ipsUMiWtpF75Vr14")
 
 #---------------------------------------------------------------
 #---------------------------------------------------------------
