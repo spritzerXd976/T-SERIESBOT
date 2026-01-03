@@ -12,7 +12,7 @@ load_dotenv()
 API_ID = int(getenv("API_ID", "28359400"))
 API_HASH = getenv("API_HASH", "656ce69d71f746a27cfb64d242a90453")
 # ------------------------------------------------------
-BOT_TOKEN = getenv("BOT_TOKEN", "7695186077:AAEKimi0BWzG7HZG5n7adFXOEmjLObGyrto")
+BOT_TOKEN = getenv("BOT_TOKEN", "7695186077:AAHGymMLtPhHXEI4KVjnFGJeu33Guso2q1I")
 # -------------------------------------------------------
 OWNER_USERNAME = getenv("OWNER_USERNAME","DarkSeraphimm")
 # --------------------------------------------------------
@@ -29,7 +29,7 @@ API_KEY = getenv("API_KEY", "NxGBNexGenBotsca510b") # youtube song api key, gene
 
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://ozixmusic:ozixmusic@cluster0.tht9lji.mongodb.net/?retryWrites=true&w=majority")
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 
@@ -117,7 +117,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "5242880000"))
 # ------------------------------------
 # ------------------------------------
 # ------------------------------------
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("STRING_SESSION", "BQGwuugAbR9xVvGgJjqh7boxdA4dZa_tvuN7OnH_cxSN5S5ZUB0KqR2tE8gO-v7u2olOB3pofPKMVZFXqpXCZeDiu4UWwDwqJkYrGA46MlWXhsDlIR-FhFvAILtr4-ox4ySJEo5G1P48p47w6eNIGAYepAEVgY1qkGqK9AwOpL-A5FZ69qZVpbaJe_Eb_yDN4NjCKgjFpe6P0bs1TBCGY9hE3Hyh6SBGvuRhCxY0xYq6K74zVS_BCE_c9ruYSD9YhqMbkEYcCK33J4_ZXbQQCBqZTIitKziz2zfeGtZwQ8RJDyXAKzydNo26PAZitCLzp1-okfFgKC3ZG6zhCMKPsLzoUCeOiQAAAAHeb2IhAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
