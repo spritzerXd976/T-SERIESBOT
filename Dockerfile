@@ -1,6 +1,7 @@
 FROM python:3.10-slim
 
-# System dependencies
+ENV DEBIAN_FRONTEND=noninteractive
+
 RUN apt-get update && apt-get install -y \
     build-essential \
     ffmpeg \
@@ -9,21 +10,22 @@ RUN apt-get update && apt-get install -y \
     python3-dev \
     libffi-dev \
     libssl-dev \
-    && apt-get clean && rm -rf /var/lib/apt/lists/*
+    libgl1 \
+    libglib2.0-0 \
+    pkg-config \
+    ca-certificates \
+    && rm -rf /var/lib/apt/lists/*
 
-# Node.js 18 (PyTgCalls requirement)
+# Node.js 18 (PyTgCalls)
 RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
     && apt-get install -y nodejs
 
 WORKDIR /app
 
-COPY requirements.txt .
-
-# 🔥 IMPORTANT FIX
 RUN pip install --upgrade pip setuptools wheel
 
-# Install Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
+COPY requirements.txt .
+RUN pip install --no-cache-dir --prefer-binary -r requirements.txt
 
 COPY . .
 
