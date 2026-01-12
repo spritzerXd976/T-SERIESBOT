@@ -3,6 +3,23 @@ revision = 3
 requires-python = ">=3.10, <3.13"
 
 [[package]]
+name = "SafoneAPI"
+version = "1.0.8"
+source = { registry = "https://pypi.org/simple" }
+sdist = { 
+    url = "https://files.pythonhosted.org/packages/source/S/SafoneAPI/SafoneAPI-1.0.8.tar.gz",
+    hash = "sha256:skip",
+    size = 0
+}
+wheels = [
+    { 
+        url = "https://files.pythonhosted.org/packages/py3/S/SafoneAPI/SafoneAPI-1.0.8-py3-none-any.whl",
+        hash = "sha256:skip",
+        size = 0
+    }
+]
+
+[[package]]
 name = "aiofiles"
 version = "25.1.0"
 source = { registry = "https://pypi.org/simple" }
