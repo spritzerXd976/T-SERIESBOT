@@ -151,15 +151,15 @@ requires-dist = [
     { name = "gitpython", specifier = ">=3.1.43" },
     { name = "hachoir", specifier = ">=3.2.0" },
     { name = "heroku3", specifier = ">=5.2.1" },
-    { name = "httpx", specifier = ">=0.27.0" },
+    { name = "httpx", specifier = ">=0.25.2" },
     { name = "humanize", specifier = ">=4.9.0" },
     { name = "motor", specifier = ">=3.4.0" },
     { name = "ntgcalls", specifier = "==2.0.6" },
     { name = "openai", specifier = ">=1.40.0" },
-    { name = "pillow", specifier = "==12.0.0" },
+    { name = "pillow", specifier = "==9.5.0" },
     { name = "prettytable", specifier = ">=3.12.0" },
     { name = "psutil", specifier = ">=5.9.8" },
-    { name = "py-tgcalls", specifier = "==2.2.8" },
+    { name = "py-tgcalls", specifier = "==0.9.7" },
     { name = "py-yt-search", specifier = "==0.5.4" },
     { name = "pyrofork", specifier = ">=2.3.45" },
     { name = "python-dotenv", specifier = ">=1.0.1" },
@@ -505,7 +505,7 @@ wheels = [
 
 [[package]]
 name = "httpx"
-version = "0.28.1"
+version = "0.25.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "anyio" },
@@ -718,7 +718,7 @@ wheels = [
 
 [[package]]
 name = "pillow"
-version = "12.0.0"
+version = "9.5.0"
 source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/5a/b0/cace85a1b0c9775a9f8f5d5423c8261c858760e2466c79b2dd184638b056/pillow-12.0.0.tar.gz", hash = "sha256:87d4f8125c9988bfbed67af47dd7a953e2fc7b0cc1e7800ec6d2080d490bb353", size = 47008828, upload-time = "2025-10-15T18:24:14.008Z" }
 wheels = [
@@ -846,7 +846,7 @@ wheels = [
 
 [[package]]
 name = "py-tgcalls"
-version = "2.2.8"
+version = "0.9.7"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "aiohttp" },
