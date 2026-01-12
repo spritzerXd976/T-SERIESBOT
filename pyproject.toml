@@ -61,7 +61,7 @@ dependencies = [
   "py-yt-search==0.5.4",
   "spotipy>=2.24.0",
   "openai>=1.40.0",
-  "python-telegram-bot==13.15"
+  "python-telegram-bot==13.15",
   "prettytable>=3.12.0"
 ]
 
