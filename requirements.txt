@@ -30,4 +30,5 @@ SafoneAPI
 telegram
 python-telegram-bot==13.15
 py-yt-search
-py-yt-search==0.5.4
+py-tgcalls==0.9.7
+pytgcalls==0.9.7
