@@ -138,6 +138,7 @@ dependencies = [
     { name = "youtube-search-python" },
     { name = "yt-dlp" },
     { name = "py-yt-search" },
+    { name = "SafoneAPI" },
 ]
 
 [package.metadata]
