@@ -1,26 +1,30 @@
 FROM python:3.10-slim
 
-# System deps
+# System dependencies
 RUN apt-get update && apt-get install -y \
-    ffmpeg \
-    git \
-    curl \
     build-essential \
-    && rm -rf /var/lib/apt/lists/*
+    ffmpeg \
+    curl \
+    git \
+    python3-dev \
+    libffi-dev \
+    libssl-dev \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# Node.js 18 (PyTgCalls requirement)
+RUN curl -fsSL https://deb.nodesource.com/setup_18.x | bash - \
+    && apt-get install -y nodejs
 
 WORKDIR /app
 
-# Install uv
-RUN pip install --no-cache-dir uv
+COPY requirements.txt .
 
-# Copy dependency files FIRST (important for cache)
-COPY pyproject.toml uv.lock ./
+# 🔥 IMPORTANT FIX
+RUN pip install --upgrade pip setuptools wheel
 
-# Install dependencies (THIS IS THE FIX)
-RUN uv sync --frozen
+# Install Python dependencies
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy project source
 COPY . .
 
-# Start bot
-CMD ["uv", "run", "python", "-m", "PURVIMUSIC"]
+CMD ["python3", "-m", "AviaxMusic"]
