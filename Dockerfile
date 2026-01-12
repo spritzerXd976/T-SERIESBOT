@@ -55,6 +55,7 @@ RUN set -ex; \
     pip install --no-cache-dir --prefer-binary speedtest-cli; \
     pip install --no-cache-dir --prefer-binary spotipy; \
     pip install --no-cache-dir --prefer-binary unidecode; \
+    pip install --no-cache-dir --prefer-binary humanize; \
     pip install --no-cache-dir --prefer-binary yt-dlp; \
     pip install --no-cache-dir --prefer-binary youtube-search; \
     pip install --no-cache-dir --prefer-binary youtube-search-python; \
